@@ -208,3 +208,5 @@ Criar modelo de Banco de Dados para um E-Commerce utilizando SQL.
 	);
 
 ## Certificado
+
+![BX6MWGCC_page-0001](https://github.com/user-attachments/assets/e660e5e2-73fe-4955-8ba3-f3e6d15e6859)
