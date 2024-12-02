@@ -13,9 +13,10 @@ Criar modelo de Banco de Dados para um E-Commerce utilizando SQL.
 ## Código
 
 create database ecommerce;
+
 use ecommerce;
 
-create table clients(
+	create table clients(
 
 		idClient int auto_increment primary key,
   
@@ -31,17 +32,24 @@ create table clients(
         
 	constraint unique_cpf_client unique (CPF)
  
-);
+	);
 
 alter table clients auto_increment=1;
 
-create table product(
-		idProduct int auto_increment primary key,
-        Pname varchar(255) not null,
-        classification_kids bool default false,
-        category enum('Eletrônico','Vestimenta','Brinquedos','Alimentos','Móveis') not null,
-        avaliação float default 0,
-        size varchar(10)
+	create table product(
+ 
+ 	idProduct int auto_increment primary key,
+  
+	Pname varchar(255) not null,
+        
+	classification_kids bool default false,
+        
+	category enum('Eletrônico','Vestimenta','Brinquedos','Alimentos','Móveis') not null,
+        
+	avaliação float default 0,
+        
+	size varchar(10)
+ 
 );
 
 alter table product auto_increment=1;
